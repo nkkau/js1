@@ -62,7 +62,7 @@
             draw();
         });
 
-    d3.json("../Data/sol_2016.json").then(function(data) {
+    d3.json("https://raw.githubusercontent.com/nkkau/js1/master/sol_2016.json").then(function(data) {
         data.planets.forEach(function(obj) {
             planets.push({
                 name: obj.name,
@@ -148,9 +148,6 @@
                     .text(format(d[chart.current.key]) + " AU");
             });
     }
-
-
-
 
 </script>
 </body>
